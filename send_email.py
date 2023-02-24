@@ -8,8 +8,8 @@ from email.mime.text import MIMEText
 def send_email(subject, message):
     host = 'smtp.gmail.com'
     port = 465
-    username = 'weiyilee17@gmail.com'
-    password = getenv('PASSWORD')
+    username = getenv('EMAIL_SENDER')
+    password = getenv('PORTFOLIO_APP_PASSWORD')
     receiver = username
     context = create_default_context()
 
