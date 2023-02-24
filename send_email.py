@@ -10,7 +10,7 @@ def send_email(subject, message):
     port = 465
     username = getenv('EMAIL_SENDER')
     password = getenv('PORTFOLIO_APP_PASSWORD')
-    receiver = username
+    receiver = getenv('EMAIL_RECEIVER')
     context = create_default_context()
 
     # To correctly render foreign characters in email
